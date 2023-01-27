@@ -190,6 +190,7 @@ nav img:hover {
 }
 
 #about h1 {
+  font-size: 2.4em;
   border-bottom: 5px solid var(--primary-color);
 }
 
@@ -208,4 +209,37 @@ nav img:hover {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  width: 40%;
+  padding-bottom: 100px;
+  border-bottom: 1px solid black;
+}
+
+.call-to-action p {
+  font-size: 4em;
+  text-align: center;
+}
+
+.call-to-action button {
+  padding: 15px;
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  font-weight: bold;
+  height: 60px;
+  color: #fff;
+}
+
+.call-to-action button:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: black;
 }
