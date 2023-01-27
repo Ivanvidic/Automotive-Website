@@ -1,5 +1,12 @@
 :root {
   --primary-color: #3b7d92;
+  --background-color: #fafbfd;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 body {
@@ -56,6 +63,7 @@ nav img:hover {
   padding: 7px;
   cursor: pointer;
   z-index: 999;
+  border: 1px solid black;
 }
 
 #back-to-top-btn img {
@@ -122,11 +130,13 @@ nav img:hover {
 }
 
 #services {
+  background-color: var(--background-color);
   padding-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 70px;
+  padding-bottom: 5em;
 }
 
 #services h1 {
@@ -168,4 +178,34 @@ nav img:hover {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
   justify-content: center;
+}
+
+#about {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 75px;
+}
+
+#about h1 {
+  border-bottom: 5px solid var(--primary-color);
+}
+
+#about span {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.about-section-one {
+  padding-top: 5em;
+  display: flex;
+  gap: 100px;
+}
+
+.about-section-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
 }
