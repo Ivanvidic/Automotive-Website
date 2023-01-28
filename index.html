@@ -20,15 +20,29 @@
     <div id="back-to-top-btn">
       <img src="/images/back-to-top-svgrepo-com.svg" alt="" />
     </div>
-    <nav>
+    <nav id="home">
       <img src="/images/logo.svg" alt="Logo" />
       <ul>
-        <li><a href="#home">HOME</a></li>
+        <li><a href="#home" class="smooth-scroll">HOME</a></li>
         <li><a href="#services" class="smooth-scroll">SERVICES</a></li>
         <li><a href="#about" class="smooth-scroll">ABOUT US</a></li>
         <li><a href="#contact" class="smooth-scroll">CONTACT US</a></li>
       </ul>
       <button class="nav-btn">SCHEDULE SERVICE</button>
+      <div class="hamburger" id="hamburger-button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="sidebar" id="sidebar">
+        <a href="#" class="close-btn" id="close-btn">&times;</a>
+        <ul class="nav-links">
+          <li><a href="#home" class="smooth-scroll">HOME</a></li>
+          <li><a href="#services" class="smooth-scroll">SERVICES</a></li>
+          <li><a href="#about" class="smooth-scroll">ABOUT US</a></li>
+          <li><a href="#contact" class="smooth-scroll">CONTACT</a></li>
+        </ul>
+      </div>
     </nav>
     <article class="hero-section">
       <img src="/images/banner.png" alt="" />
@@ -38,7 +52,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           architecto ad quidem numquam. Accusamus, ea!
         </p>
-        <button>GET IN TOUCH</button>
+        <a href=""><button>GET IN TOUCH</button></a>
       </div>
     </article>
     <main>
@@ -142,20 +156,16 @@
     <section id="contact">
       <h1>CONTACT US</h1>
       <form>
-        <label>Name</label>
-        <input type="text" name="name" placeholder="Enter your name" />
-
-        <label>Subject</label>
-        <input type="text" name="subject" placeholder="Enter the subject" />
-
-        <label>Message</label>
+        <h2>SEND US A MESSAGE</h2>
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="subject" placeholder="Subject" />
         <textarea
           type="text"
           name="message"
           placeholder="Write a message"
         ></textarea>
 
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </section>
     <footer>
@@ -163,11 +173,5 @@
       <span><a href="/privacypolicy.html">Privacy Policy</a></span>
       <span><a href="">Terms of Service</a></span>
     </footer>
-    <!-- <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/8da7548b-3e1d-4bb9-932d-0a5141a99879/cd.js"
-      type="text/javascript"
-      async
-    ></script> -->
   </body>
 </html>

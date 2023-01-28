@@ -19,3 +19,22 @@ $(document).on("click", ".smooth-scroll", function (event) {
     1000
   );
 });
+
+const hamburgerMenu = document.querySelector("#hamburger-button");
+const sidebar = document.querySelector("#sidebar");
+const closeBtn = document.querySelector("#close-btn");
+const links = document.querySelectorAll(".nav-links a");
+
+hamburgerMenu.addEventListener("click", function () {
+  sidebar.classList.toggle("active");
+});
+
+closeBtn.addEventListener("click", function () {
+  sidebar.classList.remove("active");
+});
+
+links.forEach(function (link) {
+  link.addEventListener("click", function () {
+    sidebar.classList.remove("active");
+  });
+});
