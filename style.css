@@ -243,3 +243,39 @@ nav img:hover {
   background-color: grey;
   color: black;
 }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-image: url("/images/contact-banner.jpg");
+  background-size: cover;
+}
+
+#contact h1 {
+  font-size: 2.4em;
+  border-bottom: 5px solid var(--primary-color);
+}
+
+form {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+form input {
+  height: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.container {
+  padding: 150px;
+}
