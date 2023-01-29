@@ -82,7 +82,7 @@ nav {
 }
 
 #sidebar.active {
-  width: 300px;
+  width: 250px;
 }
 
 .hamburger {
@@ -544,5 +544,9 @@ footer a {
 
   footer span {
     font-size: 0.6em;
+  }
+
+  .container {
+    padding: 10px;
   }
 }
