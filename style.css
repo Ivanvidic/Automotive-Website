@@ -357,7 +357,7 @@ textarea {
 }
 
 button[type="submit"] {
-  width: 95%;
+  width: 100%;
   padding: 10px;
   font-size: 16px;
   background-color: var(--primary-color);
@@ -539,6 +539,10 @@ footer a {
 
   footer span {
     font-size: 0.6em;
+  }
+
+  button[type="submit"] {
+    width: 95%;
   }
 
   .container {
