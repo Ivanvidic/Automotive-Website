@@ -155,17 +155,20 @@
     </article>
     <section id="contact">
       <h1>CONTACT US</h1>
-      <form>
-        <h2>SEND US A MESSAGE</h2>
-        <input type="text" name="name" placeholder="Name" />
-        <input type="text" name="subject" placeholder="Subject" />
-        <textarea
-          type="text"
-          name="message"
-          placeholder="Write a message"
-        ></textarea>
-
-        <input id="submit" type="submit" value="Submit" />
+      <form id="form" action="https://formspree.io/f/xeqwepgb" method="POST">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
       </form>
     </section>
     <footer>

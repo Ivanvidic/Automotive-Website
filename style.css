@@ -324,46 +324,61 @@ nav img:hover {
 }
 
 form {
-  width: 50%;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-  padding-top: 50px;
-  margin-top: 50px;
-  border-radius: 20px;
-  border: 3px solid black;
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#response {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
 }
 
 form h2 {
   color: black;
-}
-
-form input {
-  width: 500px;
-  height: 30px;
-  margin: 10px;
-  background-color: transparent;
-  border: 3px solid black;
-  border-radius: 10px;
-}
-
-form input::placeholder {
-  color: black;
-}
-
-form textarea::placeholder {
-  color: black;
-}
-
-form textarea {
-  margin: 20px;
-  width: 500px;
-  height: 150px;
-  background-color: transparent;
-  border: 3px solid black;
-  border-radius: 10px;
 }
 
 footer {
@@ -380,26 +395,6 @@ footer a {
 
 .container {
   padding: 150px;
-}
-
-#submit {
-  margin-top: 30px;
-  width: 60%;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--primary-color);
-  color: black;
-  height: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#submit:hover {
-  cursor: pointer;
-  cursor: pointer;
-  background-color: transparent;
-  color: black;
-  border: 3px solid black;
 }
 
 /* Responsivness */
@@ -527,7 +522,7 @@ footer a {
   }
 
   form {
-    width: 100%;
+    width: 90%;
   }
 
   form input {
